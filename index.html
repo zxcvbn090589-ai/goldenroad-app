@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>GOLDEN ROAD — расчёт авто</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg: #070708; --card: #121215; --line: #26262c; --text: #f4f1ea; --dim: #9a968e; --gold: #f2bd45; --gold2: #ffe39a; --green: #12b76a; }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { background: var(--bg); color: var(--text); font-family: "Montserrat", system-ui, sans-serif; }
+  body { padding: 0 0 calc(24px + env(safe-area-inset-bottom)); }
+  button, input, select { font: inherit; color: inherit; }
+  .goldtxt { background: linear-gradient(180deg, #fff7d1 0%, #ffe08a 25%, #f0b93f 50%, #c98a1c 62%, #ffe190 80%, #f6c95a 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  /* header */
+  .hd { position: sticky; top: 0; z-index: 5; background: linear-gradient(180deg, #070708 80%, rgba(7,7,8,0)); padding: 12px 16px 8px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 64px; height: 46px; object-fit: contain; }
+  .brand h1 { font-family: "Oswald", sans-serif; font-weight: 700; font-size: 22px; line-height: 1.05; letter-spacing: 0.01em; }
+  .brand small { display: block; font-size: 11px; font-weight: 600; color: var(--dim); letter-spacing: 0.02em; margin-top: 2px; }
+  .search { margin-top: 12px; display: flex; gap: 8px; }
+  .search input { flex: 1; min-width: 0; height: 42px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); font-size: 15px; outline: none; }
+  .search input:focus { border-color: var(--gold); }
+  .search select { height: 42px; padding: 0 10px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); font-size: 13px; font-weight: 700; }
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0 4px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: none; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); font-size: 13px; font-weight: 700; white-space: nowrap; }
+  .chip.on { background: linear-gradient(180deg, var(--gold2), var(--gold) 55%, #d99a26); color: #140c02; border-color: transparent; }
+  .chip b { font-weight: 600; opacity: 0.6; margin-left: 4px; }
+  .meta { padding: 4px 16px 10px; font-size: 12px; color: var(--dim); }
+
+  /* list */
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 12px; }
+  .car { border-radius: 16px; overflow: hidden; background: var(--card); border: 1px solid var(--line); text-align: left; cursor: pointer; display: flex; flex-direction: column; }
+  .car .ph { position: relative; aspect-ratio: 4 / 3; background: #1b1b20; }
+  .car .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tag { position: absolute; left: 8px; top: 8px; padding: 4px 8px; border-radius: 8px; font-size: 10px; font-weight: 900; letter-spacing: 0.04em; }
+  .tag.cn { background: linear-gradient(180deg, var(--gold2), var(--gold)); color: #140c02; }
+  .tag.vl { background: var(--green); color: #fff; }
+  .car .bd { padding: 9px 10px 11px; display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .car .nm { font-family: "Oswald", sans-serif; font-weight: 700; font-size: 17px; line-height: 1.1; }
+  .car .nm span { color: var(--gold); }
+  .car .sp { font-size: 11px; color: var(--dim); font-weight: 600; line-height: 1.3; }
+  .car .pr { margin-top: auto; padding-top: 4px; font-family: "Oswald", sans-serif; font-weight: 700; font-size: 19px; }
+  .empty { padding: 40px 16px; text-align: center; color: var(--dim); }
+
+  /* sheet */
+  .sheet { position: fixed; inset: 0; z-index: 20; background: var(--bg); overflow-y: auto; display: none; padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+  .sheet.on { display: block; }
+  .sheet .ph { position: relative; aspect-ratio: 4 / 3; background: #1b1b20; }
+  .sheet .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .sheet .tag { left: auto; right: 12px; top: 18px; font-size: 11px; }
+  .back { position: absolute; left: 12px; top: 12px; width: 40px; height: 40px; border-radius: 50%; border: 0; background: rgba(7,7,8,0.75); font-size: 22px; line-height: 40px; }
+  .sec { padding: 14px 16px 0; }
+  .t1 { font-family: "Oswald", sans-serif; font-weight: 700; font-size: 30px; line-height: 1.05; }
+  .t1 span { color: var(--gold); }
+  .trim { margin-top: 4px; font-size: 13px; color: var(--dim); font-weight: 600; }
+  .specs { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .specs div { padding: 6px 10px; border-radius: 10px; border: 1px solid rgba(242,189,69,0.4); background: rgba(255,255,255,0.04); font-size: 12px; font-weight: 700; }
+  .calc { margin: 16px 16px 0; padding: 14px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); }
+  .calc h3 { font-family: "Oswald", sans-serif; font-weight: 700; font-size: 20px; margin-bottom: 10px; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: 14px; }
+  .row:last-of-type { border-bottom: 0; }
+  .row span { color: var(--dim); font-weight: 600; }
+  .row b { font-weight: 800; text-align: right; }
+  .row small { display: block; font-size: 11px; color: var(--dim); font-weight: 600; }
+  .city { width: 100%; height: 46px; margin: 2px 0 6px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--gold); background: #0c0c0e; font-size: 15px; font-weight: 700; }
+  .seg { display: flex; gap: 6px; margin: 4px 0 2px; }
+  .seg button { flex: 1; min-width: 0; padding: 9px 4px; border-radius: 10px; border: 1px solid var(--line); background: #0c0c0e; font-size: 12px; font-weight: 800; }
+  .seg button.on { background: linear-gradient(180deg, var(--gold2), var(--gold) 55%, #d99a26); color: #140c02; border-color: transparent; }
+  .segnote { font-size: 11px; color: var(--dim); font-weight: 600; margin: 4px 0 6px; }
+  .total { margin-top: 10px; padding-top: 12px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; }
+  .total span { font-size: 13px; font-weight: 800; color: var(--dim); }
+  .total b { font-family: "Oswald", sans-serif; font-weight: 700; font-size: 30px; text-align: right; }
+  .total b small { display: block; font-family: "Montserrat", sans-serif; font-size: 12px; font-weight: 700; color: var(--dim); -webkit-text-fill-color: var(--dim); }
+  .note { margin-top: 8px; font-size: 11px; line-height: 1.4; color: var(--dim); }
+  .links { padding: 12px 16px 0; font-size: 13px; }
+  .links a { color: var(--gold); font-weight: 700; text-decoration: none; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 21; padding: 10px 16px calc(12px + env(safe-area-inset-bottom)); background: linear-gradient(180deg, rgba(7,7,8,0), #070708 30%); display: none; gap: 8px; }
+  .sheet.on + .bar { display: flex; }
+  .btn { flex: 1; height: 52px; border-radius: 14px; border: 0; font-weight: 900; font-size: 16px; letter-spacing: 0.01em; }
+  .btn.main { background: linear-gradient(180deg, var(--gold2), var(--gold) 55%, #d99a26); color: #140c02; box-shadow: 0 10px 30px rgba(242,189,69,0.25); }
+  .btn.call { flex: 0 0 52px; background: var(--card); border: 1px solid var(--line); font-size: 20px; }
+  .toast { position: fixed; left: 16px; right: 16px; bottom: calc(80px + env(safe-area-inset-bottom)); z-index: 30; padding: 12px 14px; border-radius: 12px; background: #1d1d22; border: 1px solid var(--gold); font-size: 13px; font-weight: 700; text-align: center; display: none; }
+</style>
+</head>
+<body>
+  <div class="hd">
+    <div class="brand"><img src="logo.png" alt="" /><h1>Подбор и расчёт авто<small>GOLDEN ROAD · Китай · Корея · Япония</small></h1></div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Марка или модель" autocomplete="off" />
+      <select id="sort"><option value="new">Новые</option><option value="cheap">Дешевле</option><option value="exp">Дороже</option></select>
+    </div>
+    <div class="chips" id="where"></div>
+    <div class="chips" id="brands"></div>
+  </div>
+  <div class="meta" id="meta"></div>
+  <div class="grid" id="grid"></div>
+
+  <div class="sheet" id="sheet"></div>
+  <div class="bar"><button class="btn call" id="call" aria-label="Позвонить">📞</button><button class="btn main" id="ask">Получить расчёт</button></div>
+  <div class="toast" id="toast"></div>
+
+<script>
+  const tg = window.Telegram && Telegram.WebApp;
+  if (tg) { tg.ready(); tg.expand(); try { tg.setHeaderColor("#070708"); tg.setBackgroundColor("#070708"); } catch (e) {} }
+  const $ = (s) => document.querySelector(s);
+  const rub = (n) => n.toLocaleString("ru-RU").replace(/,/g, " ") + " ₽";
+  const st = { cars: [], cfg: {}, dl: { cities: [] }, brand: "", where: "", q: "", sort: "new", car: null, city: localStorage.getItem("gr_city") || "" };
+
+  Promise.all(["data/cars.json", "data/config.json", "data/delivery.json"].map((u) => fetch(u, { cache: "no-cache" }).then((r) => r.json())))
+    .then(([c, cfg, dl]) => { st.cars = c.cars; st.updated = c.updated; st.cfg = cfg; st.dl = dl; init(); })
+    .catch(() => { $("#grid").innerHTML = `<div class="empty">Не удалось загрузить каталог. Попробуйте позже.</div>`; });
+
+  function init() {
+    const counts = {}; for (const c of st.cars) counts[c.make] = (counts[c.make] || 0) + 1;
+    const brands = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+    $("#brands").innerHTML = [`<button class="chip on" data-b="">Все марки<b>${st.cars.length}</b></button>`, ...brands.map((b) => `<button class="chip" data-b="${b}">${b}<b>${counts[b]}</b></button>`)].join("");
+    $("#where").innerHTML = [["", "Все"], ["vl", "В наличии во Владивостоке"], ["cn", "В наличии в Китае · 10–14 дней"]].map(([v, t], i) => `<button class="chip ${i ? "" : "on"}" data-w="${v}">${t}</button>`).join("");
+    $("#brands").onclick = (e) => { const b = e.target.closest("[data-b]"); if (!b) return; st.brand = b.dataset.b; mark("#brands", b); render(); };
+    $("#where").onclick = (e) => { const b = e.target.closest("[data-w]"); if (!b) return; st.where = b.dataset.w; mark("#where", b); render(); };
+    $("#q").oninput = (e) => { st.q = e.target.value.trim().toLowerCase(); render(); };
+    $("#sort").onchange = (e) => { st.sort = e.target.value; render(); };
+    $("#grid").onclick = (e) => { const c = e.target.closest("[data-id]"); if (c) open(c.dataset.id); };
+    $("#ask").onclick = ask;
+    $("#call").onclick = () => { location.href = "tel:" + (st.cfg.phones || [""])[0].replace(/\D/g, "").replace(/^8/, "+7"); };
+    if (tg) tg.BackButton.onClick(close);
+    window.addEventListener("popstate", () => { if ($("#sheet").classList.contains("on")) close(true); });
+    render();
+  }
+  function mark(sel, el) { for (const x of document.querySelectorAll(sel + " .chip")) x.classList.toggle("on", x === el); }
+
+  function list() {
+    let r = st.cars.filter((c) => (!st.brand || c.make === st.brand) && (!st.where || (st.where === "cn") === c.abroad)
+      && (!st.q || `${c.make} ${c.model} ${c.trim} ${c.year}`.toLowerCase().includes(st.q)));
+    if (st.sort === "cheap") r = [...r].sort((a, b) => a.price - b.price);
+    if (st.sort === "exp") r = [...r].sort((a, b) => b.price - a.price);
+    return r;
+  }
+  function render() {
+    const r = list();
+    $("#meta").textContent = `${r.length} авто · цены под ключ во Владивостоке · обновлено ${st.updated}`;
+    $("#grid").innerHTML = r.length ? r.map((c) => `
+      <button class="car" data-id="${c.id}">
+        <div class="ph">${c.img ? `<img src="${c.img}" loading="lazy" alt="" />` : ""}<div class="tag ${c.abroad ? "cn" : "vl"}">${c.abroad ? "В КИТАЕ" : "ВЛАДИВОСТОК"}</div></div>
+        <div class="bd"><div class="nm">${c.make} ${c.model} <span>${c.year}</span></div>
+        <div class="sp">${[c.engine, c.box, c.km].filter(Boolean).join(" · ")}</div>
+        <div class="pr goldtxt">${rub(c.price)}</div></div>
+      </button>`).join("") : `<div class="empty" style="grid-column:1/-1">Ничего не нашлось. Напишите нам — подберём под заказ.</div>`;
+  }
+
+  function cityRow() { return st.dl.cities.find((x) => x.city === st.city); }
+  function dprice(r) { return r && r.prices ? r.prices[st.cls] : null; }
+  function open(id) {
+    st.car = st.cars.find((c) => c.id === id); const c = st.car; st.cls = c.cls != null ? c.cls : 1;
+    const opts = [`<option value="">Выберите город</option>`, ...st.dl.cities.map((x) => `<option ${x.city === st.city ? "selected" : ""}>${x.city}</option>`), `<option value="__other" ${st.city === "__other" ? "selected" : ""}>Другой город</option>`].join("");
+    $("#sheet").innerHTML = `
+      <div class="ph">${c.img ? `<img src="${c.img}" alt="" />` : ""}<button class="back" id="back">←</button><div class="tag ${c.abroad ? "cn" : "vl"}">${c.abroad ? "В НАЛИЧИИ В КИТАЕ" : "В НАЛИЧИИ ВО ВЛАДИВОСТОКЕ"}</div></div>
+      <div class="sec"><div class="t1">${c.make} ${c.model} <span>${c.year}</span></div><div class="trim">${c.trim}</div>
+        <div class="specs">${[c.engine, c.fuel, c.box, c.drive, c.km, c.noMileageRu ? "без пробега по РФ" : ""].filter(Boolean).map((s) => `<div>${s}</div>`).join("")}</div></div>
+      <div class="calc"><h3>Расчёт до вашего города</h3>
+        <select class="city" id="city">${opts}</select>
+        <div class="seg" id="cls">${(st.dl.classes || []).map((t, i) => `<button data-c="${i}" class="${i === st.cls ? "on" : ""}">${t}</button>`).join("")}</div>
+        <div class="segnote">Класс для автовоза мы подставили по модели — при необходимости переключите</div>
+        <div class="row"><span>Авто под ключ во Владивостоке</span><b>${rub(c.price)}<small>${c.abroad ? "доставка из Китая 10–14 дней" : "уже во Владивостоке"}</small></b></div>
+        <div class="row"><span>Доставка до города</span><b id="dlv"></b></div>
+        <div class="total"><span>ИТОГО</span><b class="goldtxt" id="tot"></b></div>
+        <div class="note">Цена во Владивостоке — со всеми расходами: машина, доставка из Китая, таможенные платежи, утильсбор и документы. Комиссия банка за перевод не входит. ${st.dl.note || ""}. Окончательную сумму подтвердит менеджер.</div>
+      </div>
+      <div class="links"><a href="${c.url}" target="_blank" rel="noopener">Объявление на Дроме →</a></div>`;
+    $("#back").onclick = () => close();
+    $("#cls").onclick = (e) => { const b = e.target.closest("[data-c]"); if (!b) return; st.cls = +b.dataset.c; for (const x of document.querySelectorAll("#cls button")) x.classList.toggle("on", x === b); calc(); };
+    $("#city").onchange = (e) => { st.city = e.target.value; try { localStorage.setItem("gr_city", st.city); } catch (er) {} calc(); };
+    calc();
+    $("#sheet").classList.add("on"); $("#sheet").scrollTop = 0; document.body.style.overflow = "hidden";
+    if (tg) tg.BackButton.show(); history.pushState({ s: 1 }, "");
+  }
+  function close(fromPop) {
+    $("#sheet").classList.remove("on"); document.body.style.overflow = ""; if (tg) tg.BackButton.hide();
+    if (!fromPop && history.state && history.state.s) history.back();
+  }
+  function calc() {
+    const c = st.car, r = cityRow();
+    let d = "", tot = "";
+    if (!st.city) { d = "выберите город"; tot = rub(c.price) + "<small>+ доставка</small>"; }
+    else if (st.city === "__other" || !r || dprice(r) == null) { d = "уточнит менеджер"; tot = rub(c.price) + "<small>+ доставка</small>"; }
+    else { const p = dprice(r); d = (p ? rub(p) : r.days || "0 ₽") + (p && r.days ? `<small>${r.days}</small>` : ""); tot = rub(c.price + (p || 0)); }
+    $("#dlv").innerHTML = d; $("#tot").innerHTML = tot;
+  }
+  function ask() {
+    const c = st.car; if (!c) return;
+    const r = cityRow(), city = st.city && st.city !== "__other" ? st.city : "(укажу город)";
+    const text = `Здравствуйте! Хочу расчёт:\n${c.make} ${c.model} ${c.year}, ${c.trim}\nЦена во Владивостоке: ${rub(c.price)}\nГород доставки: ${city}${dprice(r) ? `\nДоставка (${st.dl.classes[st.cls]}): ${rub(dprice(r))}\nИтого по приложению: ${rub(c.price + dprice(r))}` : ""}\n${c.url}`;
+    try { navigator.clipboard.writeText(text); } catch (e) {}
+    const m = (st.cfg.manager || "").replace(/^@/, "");
+    if (!m) { toast("Скоро здесь будет чат с менеджером. Пока позвоните: " + (st.cfg.phones || []).join(", ")); return; }
+    const url = `https://t.me/${m}?text=${encodeURIComponent(text)}`;
+    toast("Текст заявки скопирован — если поле пустое, вставьте его в чат");
+    setTimeout(() => { if (tg) tg.openTelegramLink(url); else window.open(url, "_blank"); }, 600);
+  }
+  function toast(t) { const el = $("#toast"); el.textContent = t; el.style.display = "block"; clearTimeout(toast.t); toast.t = setTimeout(() => (el.style.display = "none"), 3500); }
+</script>
+</body>
+</html>
