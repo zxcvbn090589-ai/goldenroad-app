@@ -129,6 +129,9 @@
     if (tg) tg.BackButton.onClick(close);
     window.addEventListener("popstate", () => { if ($("#sheet").classList.contains("on")) close(true); });
     render();
+    // deep link: t.me/GoldenRoadPostBot/app?startapp=<drom id> (or ?car=<id> in a browser) opens that car
+    const sp = (tg && tg.initDataUnsafe && tg.initDataUnsafe.start_param) || new URLSearchParams(location.search).get("car");
+    if (sp && st.cars.some((c) => c.id === sp)) open(sp);
   }
   function mark(sel, el) { for (const x of document.querySelectorAll(sel + " .chip")) x.classList.toggle("on", x === el); }
 
