@@ -1,6 +1,9 @@
 {
   "_help": "manager — @username менеджера без @ (куда уходит заявка). phones — для кнопки звонка.",
-  "manager": "",
-  "phones": ["8 924 240-02-00", "8 924 520-04-00"],
+  "manager": "GOLDENROAD_VL",
+  "phones": [
+    "8 924 240-02-00",
+    "8 924 520-04-00"
+  ],
   "telegramChannel": "goldenroad125"
 }
