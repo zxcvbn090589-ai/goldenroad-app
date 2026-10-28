@@ -1,0 +1,36 @@
+name: Синхронизация с Дромом
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"   # каждые 2 часа
+  workflow_dispatch: {}       # кнопка «Run workflow» для ручного запуска
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-drom
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Обновить каталог с Дрома
+        run: python3 scripts/sync_drom.py
+
+      - name: Сохранить изменения
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then echo "Изменений нет"; exit 0; fi
+          git config user.name "GOLDEN ROAD bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/cars.json img
+          git commit -m "Каталог: синхронизация с Дромом $(TZ=Asia/Vladivostok date '+%d.%m.%Y %H:%M')"
+          git push
