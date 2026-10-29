@@ -104,13 +104,35 @@
   <div class="toast" id="toast"></div>
 
 <script>
-  const tg = window.Telegram && Telegram.WebApp;
-  if (tg) { tg.ready(); tg.expand(); try { tg.setHeaderColor("#070708"); tg.setBackgroundColor("#070708"); } catch (e) {} }
+  // Платформа: Telegram, MAX или обычный браузер. Один код для всех.
+  // В MAX адрес мини-приложения указывается с ?p=max, тогда подгружается MAX Bridge.
+  const QS = new URLSearchParams(location.search);
+  const TG = window.Telegram && Telegram.WebApp && Telegram.WebApp.initData ? Telegram.WebApp : null;
+  let MX = null;
+  const P = {
+    name: () => (TG ? "tg" : MX ? "max" : "web"),
+    back: {
+      show: () => { try { (TG || MX) && (TG || MX).BackButton.show(); } catch (e) {} },
+      hide: () => { try { (TG || MX) && (TG || MX).BackButton.hide(); } catch (e) {} },
+      onClick: (f) => { try { (TG || MX) && (TG || MX).BackButton.onClick(f); } catch (e) {} },
+    },
+    startParam: () => { const a = TG || MX; return (a && a.initDataUnsafe && a.initDataUnsafe.start_param) || QS.get("car") || QS.get("startapp"); },
+    open: (url) => { try { if (TG && /^https:\/\/t\.me\//.test(url)) return TG.openTelegramLink(url); if (TG) return TG.openLink(url); if (MX) return MX.openLink(url); } catch (e) {} const a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove(); }, // не window.open: его перекрывает функция open() ниже
+  };
+  function loadMax() {
+    if (TG || (QS.get("p") !== "max" && !/max/i.test(navigator.userAgent))) return Promise.resolve();
+    return new Promise((res) => {
+      const s = document.createElement("script"); s.src = "https://st.max.ru/js/max-web-app.js";
+      s.onload = () => { if (window.WebApp && (window.WebApp.initData || QS.get("p") === "max")) MX = window.WebApp; res(); };
+      s.onerror = () => res(); setTimeout(res, 3000); document.head.appendChild(s);
+    });
+  }
+  if (TG) { TG.ready(); TG.expand(); try { TG.setHeaderColor("#070708"); TG.setBackgroundColor("#070708"); } catch (e) {} }
   const $ = (s) => document.querySelector(s);
   const rub = (n) => n.toLocaleString("ru-RU").replace(/,/g, " ") + " ₽";
   const st = { cars: [], cfg: {}, dl: { cities: [] }, brand: "", where: "", q: "", sort: "new", car: null, city: localStorage.getItem("gr_city") || "" };
 
-  Promise.all(["data/cars.json", "data/config.json", "data/delivery.json"].map((u) => fetch(u, { cache: "no-cache" }).then((r) => r.json())))
+  Promise.all(["data/cars.json", "data/config.json", "data/delivery.json"].map((u) => fetch(u, { cache: "no-cache" }).then((r) => r.json())).concat(loadMax()))
     .then(([c, cfg, dl]) => { st.cars = c.cars; st.updated = c.updated; st.cfg = cfg; st.dl = dl; init(); })
     .catch(() => { $("#grid").innerHTML = `<div class="empty">Не удалось загрузить каталог. Попробуйте позже.</div>`; });
 
@@ -126,11 +148,12 @@
     $("#grid").onclick = (e) => { const c = e.target.closest("[data-id]"); if (c) open(c.dataset.id); };
     $("#ask").onclick = ask;
     $("#call").onclick = () => { location.href = "tel:" + (st.cfg.phones || [""])[0].replace(/\D/g, "").replace(/^8/, "+7"); };
-    if (tg) tg.BackButton.onClick(close);
+    P.back.onClick(close);
+    if (MX) { try { MX.ready(); } catch (e) {} }
     window.addEventListener("popstate", () => { if ($("#sheet").classList.contains("on")) close(true); });
     render();
     // deep link: t.me/GoldenRoadPostBot/app?startapp=<drom id> (or ?car=<id> in a browser) opens that car
-    const sp = (tg && tg.initDataUnsafe && tg.initDataUnsafe.start_param) || new URLSearchParams(location.search).get("car");
+    const sp = P.startParam();
     if (sp && st.cars.some((c) => c.id === sp)) open(sp);
   }
   function mark(sel, el) { for (const x of document.querySelectorAll(sel + " .chip")) x.classList.toggle("on", x === el); }
@@ -178,10 +201,10 @@
     $("#city").onchange = (e) => { st.city = e.target.value; try { localStorage.setItem("gr_city", st.city); } catch (er) {} calc(); };
     calc();
     $("#sheet").classList.add("on"); $("#sheet").scrollTop = 0; document.body.style.overflow = "hidden";
-    if (tg) tg.BackButton.show(); history.pushState({ s: 1 }, "");
+    P.back.show(); history.pushState({ s: 1 }, "");
   }
   function close(fromPop) {
-    $("#sheet").classList.remove("on"); document.body.style.overflow = ""; if (tg) tg.BackButton.hide();
+    $("#sheet").classList.remove("on"); document.body.style.overflow = ""; P.back.hide();
     if (!fromPop && history.state && history.state.s) history.back();
   }
   function calc() {
@@ -196,12 +219,14 @@
     const c = st.car; if (!c) return;
     const r = cityRow(), city = st.city && st.city !== "__other" ? st.city : "(укажу город)";
     const text = `Здравствуйте! Хочу расчёт:\n${c.make} ${c.model} ${c.year}, ${c.trim}\nЦена во Владивостоке: ${rub(c.price)}\nГород доставки: ${city}${dprice(r) ? `\nДоставка (${st.dl.classes[st.cls]}): ${rub(dprice(r))}\nИтого по приложению: ${rub(c.price + dprice(r))}` : ""}\n${c.url}`;
-    try { navigator.clipboard.writeText(text); } catch (e) {}
+    try { navigator.clipboard.writeText(text).catch(() => {}); } catch (e) {}
     const m = (st.cfg.manager || "").replace(/^@/, "");
-    if (!m) { toast("Скоро здесь будет чат с менеджером. Пока позвоните: " + (st.cfg.phones || []).join(", ")); return; }
-    const url = `https://t.me/${m}?text=${encodeURIComponent(text)}`;
-    toast("Текст заявки скопирован — если поле пустое, вставьте его в чат");
-    setTimeout(() => { if (tg) tg.openTelegramLink(url); else window.open(url, "_blank"); }, 600);
+    // В MAX заявка уходит менеджеру в MAX (managerMax — ссылка на его профиль), иначе — в Telegram
+    const url = P.name() === "max" && st.cfg.managerMax ? st.cfg.managerMax
+      : m ? `https://t.me/${m}?text=${encodeURIComponent(text)}` : "";
+    if (!url) { toast("Скоро здесь будет чат с менеджером. Пока позвоните: " + (st.cfg.phones || []).join(", ")); return; }
+    toast(P.name() === "max" ? "Текст заявки скопирован — вставьте его в чат с менеджером" : "Текст заявки скопирован — если поле пустое, вставьте его в чат");
+    setTimeout(() => P.open(url), 600);
   }
   function toast(t) { const el = $("#toast"); el.textContent = t; el.style.display = "block"; clearTimeout(toast.t); toast.t = setTimeout(() => (el.style.display = "none"), 3500); }
 </script>

@@ -1,6 +1,7 @@
 {
-  "_help": "manager — @username менеджера без @ (куда уходит заявка). phones — для кнопки звонка.",
+  "_help": "manager — Telegram-ник менеджера без @ (куда уходит заявка из Telegram). managerMax — ссылка на профиль/чат менеджера в MAX (заявка из приложения в MAX), пусто — заявка уйдёт в Telegram. phones — для кнопки звонка.",
   "manager": "GOLDENROAD_VL",
+  "managerMax": "",
   "phones": [
     "8 924 240-02-00",
     "8 924 520-04-00"
