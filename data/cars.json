@@ -1,6 +1,25 @@
 {
- "updated": "30.10.2026 15:00",
+ "updated": "31.10.2026 14:56",
  "cars": [
+  {
+   "id": "709940112",
+   "make": "Mitsubishi",
+   "model": "Outlander",
+   "year": 2022,
+   "trim": "",
+   "engine": "2.0 л (146 л.с.)",
+   "fuel": "бензин",
+   "box": "вариатор",
+   "drive": "передний",
+   "km": "42 000 км",
+   "price": 1750000,
+   "abroad": true,
+   "noMileageRu": true,
+   "location": "Китай → Владивосток",
+   "url": "https://auto.drom.ru/vladivostok/mitsubishi/outlander/709940112.html",
+   "img": "img/709940112.jpg",
+   "cls": 1
+  },
   {
    "id": "873484353",
    "make": "Volkswagen",
