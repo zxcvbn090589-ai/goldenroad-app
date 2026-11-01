@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GOLDEN ROAD — фото авто</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; background: #070708; color: #f4f1ea; font-family: "Montserrat", system-ui, -apple-system, sans-serif; }
+  header { display: flex; align-items: center; gap: 12px; padding: 12px 16px; }
+  header img { width: 64px; height: 46px; object-fit: contain; }
+  h1 { margin: 0; font-family: "Oswald", sans-serif; font-size: 22px; font-weight: 700; }
+  small { display: block; margin-top: 2px; color: #9a968e; font-size: 12px; font-weight: 600; }
+  main { display: grid; gap: 8px; max-width: 900px; margin: 0 auto; padding: 0 0 24px; }
+  main img { display: block; width: 100%; height: auto; background: #1b1b20; }
+  main a { display: block; }
+</style>
+</head>
+<body>
+  <header><img src="logo.png" alt="GOLDEN ROAD" /><h1 id="title">Фото авто<small id="count"></small></h1></header>
+  <main id="photos"></main>
+<script>
+  // Галерея для кнопки под постом: gallery.html?c=<папка в gallery/>&n=<сколько фото>&t=<название>
+  const q = new URLSearchParams(location.search);
+  const dir = (q.get("c") || "").replace(/[^a-z0-9-]/g, "");
+  const n = Math.min(parseInt(q.get("n"), 10) || 0, 50);
+  const title = q.get("t");
+  if (title) { document.title = "GOLDEN ROAD — " + title; document.getElementById("title").firstChild.textContent = title; }
+  document.getElementById("count").textContent = n + " фото";
+  const box = document.getElementById("photos");
+  for (let i = 1; dir && i <= n; i++) {
+    const a = document.createElement("a");
+    a.href = `gallery/${dir}/${String(i).padStart(2, "0")}.jpg`;
+    const img = document.createElement("img");
+    img.src = a.href; img.alt = `Фото ${i}`; img.loading = i > 2 ? "lazy" : "eager";
+    a.appendChild(img);
+    box.appendChild(a);
+  }
+</script>
+</body>
+</html>
