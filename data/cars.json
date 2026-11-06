@@ -1,6 +1,25 @@
 {
- "updated": "06.11.2026 08:59",
+ "updated": "06.11.2026 15:13",
  "cars": [
+  {
+   "id": "398741108",
+   "make": "Kia",
+   "model": "Seltos",
+   "year": 2023,
+   "trim": "1.5 CVT Luxury",
+   "engine": "1.5 л (115 л.с.)",
+   "fuel": "бензин",
+   "box": "вариатор",
+   "drive": "передний",
+   "km": "24 000 км",
+   "price": 1760000,
+   "abroad": true,
+   "noMileageRu": true,
+   "location": "Китай → Владивосток",
+   "url": "https://auto.drom.ru/vladivostok/kia/seltos/398741108.html",
+   "img": "img/398741108.jpg",
+   "cls": 1
+  },
   {
    "id": "925662204",
    "make": "Haval",
