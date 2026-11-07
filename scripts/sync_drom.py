@@ -5,19 +5,23 @@
 data/cars.json к ним:
   * цена, пробег, комплектация, «в наличии в Китае / во Владивостоке» — обновляются;
   * машины, которых больше нет на Дроме (продана / снята), — удаляются вместе с фото;
-  * новые объявления — добавляются (фото скачивается в img/).
+  * новые объявления — добавляются (фото скачивается в img/);
+  * галерея: до 12 фото каждого объявления сохраняются в gal/<id>/1.jpg … (1000 px, без метаданных).
+    За один запуск — не больше GAL_PER_RUN машин, остальные догружаются в следующие запуски.
 
 Если Дром не отдал витрину целиком (ошибка, капча, меньше машин, чем пишет сам
 Дром), файл НЕ меняется — чтобы из-за сбоя не стереть каталог.
 
 Запуск:  python3 scripts/sync_drom.py            (меняет файлы)
          python3 scripts/sync_drom.py --dry-run  (только показывает изменения)
-Только стандартная библиотека Python 3.9+.
+Python 3.9+. Для сжатия фото галереи нужен Pillow (pip install pillow); без него фото сохраняются как есть.
 """
 import html
 import json
 import os
+import io
 import re
+import shutil
 import sys
 import time
 import urllib.error
@@ -28,6 +32,10 @@ from datetime import datetime, timedelta, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CARS = os.path.join(ROOT, "data", "cars.json")
 IMG_DIR = os.path.join(ROOT, "img")
+GAL_DIR = os.path.join(ROOT, "gal")
+MAX_PHOTOS = 12                                         # фото в галерее одной машины
+GAL_PER_RUN = int(os.environ.get("GAL_PER_RUN", "40"))  # сколько машин догружать за один запуск
+GAL_WIDTH, GAL_QUALITY = 1000, 72
 DEALER = "https://auto.drom.ru/goldenroad/"
 MAX_PAGES = 60
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -130,6 +138,98 @@ def crawl():
     return cars, expected
 
 
+def gallery_urls(ad_html):
+    """Все большие фото объявления в порядке Дрома (первое — главное)."""
+    keys, urls = set(), []
+    for m in re.finditer(r'(https://s\d*\.auto\.drom\.ru/photo/v2/([\w-]+)/gen1200\.jpg)', ad_html):
+        if m.group(2) not in keys:
+            keys.add(m.group(2))
+            urls.append(m.group(1))
+    return urls
+
+
+def spread(idx, k):
+    """k номеров, равномерно разложенных по списку idx."""
+    if k <= 0 or not idx:
+        return []
+    if len(idx) <= k:
+        return list(idx)
+    return [idx[round(i * (len(idx) - 1) / (k - 1))] for i in range(k)] if k > 1 else [idx[0]]
+
+
+def photo_order(n):
+    """Порядок, в котором пробуем фото, чтобы набрать MAX_PHOTOS лучших.
+    Объявления продавца устроены одинаково: 1 — главное, 2 — промо с QR-кодом,
+    3–8 — кузов с разных сторон, дальше — приборы, экран, камера, люк, салон, в конце — багажник.
+    Берём главное + 3 ракурса кузова (спереди, сзади-сбоку, сзади), а остальное — равномерно
+    из салона и функций, обязательно с последним фото (багажник). Запасные — все остальные по порядку."""
+    if n <= MAX_PHOTOS + 1:
+        first = list(range(n))
+    else:
+        ext = [i for i in (0, 3, 5, 6) if i < n]
+        rest = list(range(8, n))
+        inner = spread(rest[:-1], MAX_PHOTOS - len(ext) - 1) + rest[-1:]
+        first = ext + inner
+    return first + [i for i in range(n) if i not in first]
+
+
+def is_promo(im):
+    """Промо-картинка с QR-кодом — вертикальная, а фото машины — горизонтальные."""
+    return im.height > im.width * 0.9
+
+
+def shrink(data):
+    """Уменьшает фото до GAL_WIDTH и убирает метаданные. Возвращает None для промо-картинки.
+    Без Pillow — возвращает как есть."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return data
+    im = Image.open(io.BytesIO(data))
+    if is_promo(im):
+        return None
+    im = im.convert("RGB")
+    if im.width > GAL_WIDTH:
+        im = im.resize((GAL_WIDTH, round(im.height * GAL_WIDTH / im.width)), Image.LANCZOS)
+    out = io.BytesIO()
+    im.save(out, "JPEG", quality=GAL_QUALITY, optimize=True, progressive=True)
+    return out.getvalue()
+
+
+def load_gallery(car):
+    """Скачивает до MAX_PHOTOS лучших фото машины в gal/<id>/ (кузов, салон, функции — в порядке
+    объявления). Возвращает число фото (0 — не получилось)."""
+    urls = gallery_urls(fetch(car["url"]))
+    if not urls:
+        return 0
+    tmp = os.path.join(GAL_DIR, car["id"] + ".tmp")
+    shutil.rmtree(tmp, ignore_errors=True)
+    os.makedirs(tmp)
+    try:
+        got = {}  # номер в объявлении → готовое фото
+        for i in photo_order(len(urls)):
+            if len(got) >= MAX_PHOTOS:
+                break
+            data = fetch(urls[i], binary=True)
+            time.sleep(0.3)
+            if len(data) < 2000:
+                continue
+            small = shrink(data)
+            if small:
+                got[i] = small
+        if not got:
+            return 0
+        for n, i in enumerate(sorted(got), 1):  # в галерее — в порядке объявления
+            with open(os.path.join(tmp, f"{n}.jpg"), "wb") as fh:
+                fh.write(got[i])
+        dst = os.path.join(GAL_DIR, car["id"])
+        shutil.rmtree(dst, ignore_errors=True)
+        os.rename(tmp, dst)
+        return len(got)
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def split_items(items):
     r = {"engine": "", "fuel": "", "box": "", "drive": "", "km": ""}
     for it in items:
@@ -213,12 +313,32 @@ def main():
                 print(f"  фото {d['id']} не скачалось: {e}")
         car["img"] = f"img/{d['id']}.jpg" if os.path.exists(img_path) else car.get("img", "")
         # стабильный порядок полей, как в исходном файле
+        if car.get("photos") and not os.path.isdir(os.path.join(GAL_DIR, d["id"])):
+            car.pop("photos")  # папку удалили руками — догрузим заново
         order = ["id", "make", "model", "year", "trim", "engine", "fuel", "box", "drive", "km", "price",
-                 "abroad", "noMileageRu", "location", "url", "img", "cls"]
+                 "abroad", "noMileageRu", "location", "url", "img", "photos", "cls"]
         result.append({k: car[k] for k in order if k in car} | {k: v for k, v in car.items() if k not in order})
 
     new_ids = {c["id"] for c in result}
     removed = [c for i, c in old.items() if i not in new_ids]
+
+    # галерея: догружаем фото машинам, у которых её ещё нет (не больше GAL_PER_RUN за запуск)
+    gal_added = []
+    if not dry:
+        os.makedirs(GAL_DIR, exist_ok=True)
+        todo = [c for c in result if not c.get("photos")][:GAL_PER_RUN]
+        for c in todo:
+            try:
+                n = load_gallery(c)
+            except Exception as e:  # noqa: BLE001
+                print(f"  галерея {c['id']} не скачалась: {e}")
+                continue
+            if n:
+                c["photos"] = n
+                gal_added.append(f"{c['make']} {c['model']} ({c['id']}): {n} фото")
+            time.sleep(1.5)
+        left = sum(1 for c in result if not c.get("photos"))
+        print(f"\nГалерея: добавлено {len(gal_added)} машин, осталось без галереи {left}")
 
     print(f"\nИзменено: {len(changed)}")
     for s in changed:
@@ -230,7 +350,7 @@ def main():
     for c in removed:
         print(f"  - {c['make']} {c['model']} {c['year']} ({c['id']})")
 
-    if not (changed or added or removed or [c["id"] for c in result] != [c["id"] for c in doc["cars"]]):
+    if not (changed or added or removed or gal_added or [c["id"] for c in result] != [c["id"] for c in doc["cars"]]):
         print("\nБез изменений.")
         return
     if dry:
@@ -240,6 +360,8 @@ def main():
         p = os.path.join(IMG_DIR, f"{c['id']}.jpg")
         if os.path.exists(p):
             os.remove(p)
+        if re.match(r"^\d{4,12}$", str(c["id"])):
+            shutil.rmtree(os.path.join(GAL_DIR, c["id"]), ignore_errors=True)
     doc["cars"] = result
     doc["updated"] = datetime.now(VLAT).strftime("%d.%m.%Y %H:%M")
     with open(CARS, "w", encoding="utf-8") as f:
