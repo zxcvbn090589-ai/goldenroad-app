@@ -1,6 +1,26 @@
 {
- "updated": "07.11.2026 15:14",
+ "updated": "07.11.2026 19:14",
  "cars": [
+  {
+   "id": "359745849",
+   "make": "GAC",
+   "model": "Trumpchi GS4",
+   "year": 2022,
+   "trim": "",
+   "engine": "1.5 л (159 л.с.)",
+   "fuel": "бензин",
+   "box": "автомат",
+   "drive": "передний",
+   "km": "41 000 км",
+   "price": 1460000,
+   "abroad": true,
+   "noMileageRu": true,
+   "location": "Китай → Владивосток",
+   "url": "https://auto.drom.ru/vladivostok/gac/trumpchi_gs4/359745849.html",
+   "img": "img/359745849.jpg",
+   "cls": 1,
+   "photos": 12
+  },
   {
    "id": "364494222",
    "make": "Honda",
@@ -1618,8 +1638,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/tayron/265456268.html",
    "img": "img/265456268.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "265700505",
@@ -1638,8 +1658,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/corolla/265700505.html",
    "img": "img/265700505.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "254504344",
@@ -1658,8 +1678,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/254504344.html",
    "img": "img/254504344.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "261439008",
@@ -1678,8 +1698,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/chevrolet/monza/261439008.html",
    "img": "img/261439008.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "252839124",
@@ -1698,8 +1718,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/3-series/252839124.html",
    "img": "img/252839124.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "243507966",
@@ -1718,8 +1738,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/3-series/243507966.html",
    "img": "img/243507966.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "246960462",
@@ -1738,8 +1758,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/nv200/246960462.html",
    "img": "img/246960462.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "233361980",
@@ -1758,8 +1778,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/lamando_l/233361980.html",
    "img": "img/233361980.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "194934215",
@@ -1778,8 +1798,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/sagitar/194934215.html",
    "img": "img/194934215.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "213744255",
@@ -1798,8 +1818,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/tharu/213744255.html",
    "img": "img/213744255.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "192937295",
@@ -1818,8 +1838,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/192937295.html",
    "img": "img/192937295.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "194398901",
@@ -1838,8 +1858,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/194398901.html",
    "img": "img/194398901.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "180451726",
@@ -1858,8 +1878,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/a3/180451726.html",
    "img": "img/180451726.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "189517251",
@@ -1878,8 +1898,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/x1/189517251.html",
    "img": "img/189517251.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "166211623",
@@ -1898,8 +1918,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/golf/166211623.html",
    "img": "img/166211623.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "162325829",
@@ -1918,8 +1938,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/subaru/forester/162325829.html",
    "img": "img/162325829.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "164694823",
@@ -1938,8 +1958,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/lamando_l/164694823.html",
    "img": "img/164694823.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "132606277",
@@ -1958,8 +1978,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/q2/132606277.html",
    "img": "img/132606277.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "148833184",
@@ -1978,8 +1998,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/x1/148833184.html",
    "img": "img/148833184.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "132181168",
@@ -1998,8 +2018,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/vezel/132181168.html",
    "img": "img/132181168.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "102245474",
@@ -2018,8 +2038,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/corolla/102245474.html",
    "img": "img/102245474.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "106563446",
@@ -2038,8 +2058,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/kx3/106563446.html",
    "img": "img/106563446.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "873484353",
@@ -2058,8 +2078,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/golf/873484353.html",
    "img": "img/873484353.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "877983917",
@@ -2078,8 +2098,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/haval/chitu/877983917.html",
    "img": "img/877983917.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "913444196",
@@ -2098,8 +2118,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/chery/tiggo_7_plus/913444196.html",
    "img": "img/913444196.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "745314212",
@@ -2118,8 +2138,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/seltos/745314212.html",
    "img": "img/745314212.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "822596391",
@@ -2138,8 +2158,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/qashqai/822596391.html",
    "img": "img/822596391.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "672621069",
@@ -2158,8 +2178,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/672621069.html",
    "img": "img/672621069.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "706380090",
@@ -2178,8 +2198,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/vezel/706380090.html",
    "img": "img/706380090.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "397350142",
@@ -2198,8 +2218,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/geely/sx11/397350142.html",
    "img": "img/397350142.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "179364476",
@@ -2218,8 +2238,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/tharu/179364476.html",
    "img": "img/179364476.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "288848036",
@@ -2238,8 +2258,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/q3/288848036.html",
    "img": "img/288848036.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "168248799",
@@ -2258,8 +2278,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/vezel/168248799.html",
    "img": "img/168248799.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "853604276",
@@ -2278,8 +2298,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/ford/ranger/853604276.html",
    "img": "img/853604276.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "159096238",
@@ -2298,8 +2318,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/magotan/159096238.html",
    "img": "img/159096238.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "577056620",
@@ -2318,8 +2338,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/rav4/577056620.html",
    "img": "img/577056620.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "872325529",
@@ -2338,8 +2358,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/rav4/872325529.html",
    "img": "img/872325529.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "106571984",
@@ -2358,8 +2378,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/rav4/106571984.html",
    "img": "img/106571984.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "903449388",
@@ -2378,8 +2398,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/903449388.html",
    "img": "img/903449388.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "929325469",
@@ -2398,8 +2418,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/929325469.html",
    "img": "img/929325469.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "895106949",
@@ -2418,7 +2438,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/895106949.html",
    "img": "img/895106949.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "842504326",
@@ -2437,7 +2458,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/842504326.html",
    "img": "img/842504326.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "854706194",
@@ -2456,7 +2478,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/alphard/854706194.html",
    "img": "img/854706194.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "820141655",
@@ -2494,7 +2517,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/796485242.html",
    "img": "img/796485242.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "797730008",
@@ -2513,7 +2537,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/c-hr/797730008.html",
    "img": "img/797730008.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "734993693",
@@ -2532,7 +2557,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/734993693.html",
    "img": "img/734993693.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "765968403",
@@ -2551,7 +2577,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/765968403.html",
    "img": "img/765968403.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "710533916",
@@ -2570,7 +2597,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/710533916.html",
    "img": "img/710533916.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "699558620",
@@ -2589,7 +2617,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/699558620.html",
    "img": "img/699558620.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "708234436",
@@ -2608,7 +2637,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/708234436.html",
    "img": "img/708234436.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "688681484",
@@ -2627,7 +2657,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/688681484.html",
    "img": "img/688681484.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "616091643",
@@ -2646,7 +2677,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/616091643.html",
    "img": "img/616091643.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "667222997",
@@ -2665,7 +2697,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/kicks/667222997.html",
    "img": "img/667222997.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "596224193",
@@ -2684,7 +2717,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/596224193.html",
    "img": "img/596224193.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "572103883",
@@ -2703,7 +2737,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/izoa/572103883.html",
    "img": "img/572103883.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "583206347",
@@ -2722,7 +2757,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/583206347.html",
    "img": "img/583206347.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "557897704",
@@ -2741,7 +2777,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/557897704.html",
    "img": "img/557897704.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "571177117",
@@ -2760,7 +2797,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/571177117.html",
    "img": "img/571177117.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "533338890",
@@ -2779,7 +2817,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/533338890.html",
    "img": "img/533338890.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "471881399",
@@ -2798,7 +2837,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/471881399.html",
    "img": "img/471881399.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "513164321",
@@ -2817,7 +2857,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/513164321.html",
    "img": "img/513164321.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "402696731",
@@ -2836,7 +2877,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/402696731.html",
    "img": "img/402696731.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "443519155",
@@ -2855,7 +2897,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/443519155.html",
    "img": "img/443519155.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "302941072",
@@ -2874,7 +2917,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/ford/bronco/302941072.html",
    "img": "img/302941072.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "233467081",
@@ -2893,7 +2937,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/233467081.html",
    "img": "img/233467081.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "299859014",
@@ -2912,7 +2957,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/299859014.html",
    "img": "img/299859014.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "213143072",
@@ -2931,7 +2977,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/213143072.html",
    "img": "img/213143072.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "231585600",
@@ -2950,7 +2997,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/231585600.html",
    "img": "img/231585600.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "429618591",
@@ -2969,7 +3017,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/corolla/429618591.html",
    "img": "img/429618591.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "145263936",
@@ -2988,7 +3037,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/vezel/145263936.html",
    "img": "img/145263936.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "872646334",
@@ -3007,7 +3057,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/872646334.html",
    "img": "img/872646334.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "817198603",
@@ -3026,7 +3077,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/3-series/817198603.html",
    "img": "img/817198603.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "725512106",
@@ -3045,7 +3097,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/725512106.html",
    "img": "img/725512106.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "698263613",
@@ -3064,7 +3117,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/kx3/698263613.html",
    "img": "img/698263613.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "644240666",
@@ -3083,7 +3137,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/levin/644240666.html",
    "img": "img/644240666.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "628395508",
@@ -3102,7 +3157,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/mazda/cx-5/628395508.html",
    "img": "img/628395508.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "611303904",
@@ -3121,7 +3177,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/t-roc/611303904.html",
    "img": "img/611303904.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "342628791",
@@ -3140,7 +3197,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/mazda/cx-5/342628791.html",
    "img": "img/342628791.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "277707324",
