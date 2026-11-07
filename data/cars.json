@@ -1,6 +1,46 @@
 {
- "updated": "07.11.2026 11:59",
+ "updated": "07.11.2026 13:14",
  "cars": [
+  {
+   "id": "364494222",
+   "make": "Honda",
+   "model": "XR-V",
+   "year": 2023,
+   "trim": "1.5 CVT Popular",
+   "engine": "1.5 л (124 л.с.)",
+   "fuel": "бензин",
+   "box": "вариатор",
+   "drive": "передний",
+   "km": "15 000 км",
+   "price": 1850000,
+   "abroad": true,
+   "noMileageRu": true,
+   "location": "Китай → Владивосток",
+   "url": "https://auto.drom.ru/vladivostok/honda/xr-v/364494222.html",
+   "img": "img/364494222.jpg",
+   "cls": 1,
+   "photos": 12
+  },
+  {
+   "id": "828608731",
+   "make": "Audi",
+   "model": "Q2",
+   "year": 2022,
+   "trim": "L 1.4 35 TFSI S tronic Fashion",
+   "engine": "1.4 л (150 л.с.)",
+   "fuel": "бензин",
+   "box": "робот",
+   "drive": "передний",
+   "km": "55 000 км",
+   "price": 1690000,
+   "abroad": true,
+   "noMileageRu": true,
+   "location": "Китай → Владивосток",
+   "url": "https://auto.drom.ru/vladivostok/audi/q2/828608731.html",
+   "img": "img/828608731.jpg",
+   "cls": 0,
+   "photos": 12
+  },
   {
    "id": "498796544",
    "make": "Hyundai",
@@ -18,8 +58,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/ix35/498796544.html",
    "img": "img/498796544.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "338261865",
@@ -38,8 +78,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/jetour/x70_plus/338261865.html",
    "img": "img/338261865.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "398741108",
@@ -58,8 +98,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/seltos/398741108.html",
    "img": "img/398741108.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "925662204",
@@ -78,8 +118,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/haval/h6/925662204.html",
    "img": "img/925662204.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "905733780",
@@ -98,8 +138,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/3-series/905733780.html",
    "img": "img/905733780.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "909956601",
@@ -118,8 +158,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/909956601.html",
    "img": "img/909956601.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "888633934",
@@ -138,8 +178,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/q3/888633934.html",
    "img": "img/888633934.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "878586696",
@@ -158,8 +198,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/q3/878586696.html",
    "img": "img/878586696.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "879027044",
@@ -178,8 +218,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/vezel/879027044.html",
    "img": "img/879027044.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "872792275",
@@ -198,8 +238,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/x1/872792275.html",
    "img": "img/872792275.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "861784163",
@@ -218,8 +258,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/3-series/861784163.html",
    "img": "img/861784163.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "871320850",
@@ -238,8 +278,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/corolla/871320850.html",
    "img": "img/871320850.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "853544152",
@@ -258,8 +298,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/yaris/853544152.html",
    "img": "img/853544152.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "823192207",
@@ -278,8 +318,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/jetta/vs7/823192207.html",
    "img": "img/823192207.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "853240339",
@@ -298,8 +338,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/golf/853240339.html",
    "img": "img/853240339.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "819372745",
@@ -318,8 +358,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/gac/trumpchi_m6_pro/819372745.html",
    "img": "img/819372745.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "778541259",
@@ -338,8 +378,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/778541259.html",
    "img": "img/778541259.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "806116426",
@@ -358,8 +398,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/fit/806116426.html",
    "img": "img/806116426.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "752804500",
@@ -378,8 +418,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/golf/752804500.html",
    "img": "img/752804500.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "743084296",
@@ -398,8 +438,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/a3/743084296.html",
    "img": "img/743084296.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "747937251",
@@ -418,8 +458,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/3-series/747937251.html",
    "img": "img/747937251.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "738000353",
@@ -438,8 +478,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/738000353.html",
    "img": "img/738000353.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "742516874",
@@ -458,8 +498,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/chery/tiggo_7_plus/742516874.html",
    "img": "img/742516874.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "724270475",
@@ -478,8 +518,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/724270475.html",
    "img": "img/724270475.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "709940112",
@@ -498,8 +538,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/mitsubishi/outlander/709940112.html",
    "img": "img/709940112.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "720211619",
@@ -518,8 +558,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/yaris_l/720211619.html",
    "img": "img/720211619.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "709883698",
@@ -538,8 +578,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/jetta/vs5/709883698.html",
    "img": "img/709883698.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "689344215",
@@ -558,8 +598,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/tharu/689344215.html",
    "img": "img/689344215.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "691857819",
@@ -578,8 +618,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/subaru/forester/691857819.html",
    "img": "img/691857819.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "688836939",
@@ -598,8 +638,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/t-roc/688836939.html",
    "img": "img/688836939.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "669366504",
@@ -618,8 +658,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/mitsubishi/eclipse_cross/669366504.html",
    "img": "img/669366504.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "674835649",
@@ -638,8 +678,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/674835649.html",
    "img": "img/674835649.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "668553934",
@@ -658,8 +698,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/jetour/dasheng/668553934.html",
    "img": "img/668553934.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "665840105",
@@ -678,8 +718,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/golf/665840105.html",
    "img": "img/665840105.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "665958525",
@@ -698,8 +738,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/kicks/665958525.html",
    "img": "img/665958525.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "661961113",
@@ -718,8 +758,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/x1/661961113.html",
    "img": "img/661961113.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "638749045",
@@ -738,8 +778,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/k3/638749045.html",
    "img": "img/638749045.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "647931419",
@@ -758,8 +798,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/kx3/647931419.html",
    "img": "img/647931419.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "629965355",
@@ -778,8 +818,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/629965355.html",
    "img": "img/629965355.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "635094262",
@@ -798,8 +838,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/x1/635094262.html",
    "img": "img/635094262.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "626049923",
@@ -818,7 +858,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/x1/626049923.html",
    "img": "img/626049923.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "615290295",
@@ -837,7 +878,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/tayron/615290295.html",
    "img": "img/615290295.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "625321208",
@@ -856,7 +898,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/625321208.html",
    "img": "img/625321208.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "602016541",
@@ -875,7 +918,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/q3/602016541.html",
    "img": "img/602016541.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "592980103",
@@ -894,7 +938,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/vezel/592980103.html",
    "img": "img/592980103.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "599012880",
@@ -913,7 +958,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/lamando_l/599012880.html",
    "img": "img/599012880.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "569974613",
@@ -932,7 +978,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/569974613.html",
    "img": "img/569974613.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "559485114",
@@ -951,7 +998,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/lexus/nx200/559485114.html",
    "img": "img/559485114.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "567084345",
@@ -970,7 +1018,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/q3/567084345.html",
    "img": "img/567084345.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "554987160",
@@ -989,7 +1038,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/x1/554987160.html",
    "img": "img/554987160.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "528853171",
@@ -1008,7 +1058,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/t-roc/528853171.html",
    "img": "img/528853171.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "547544666",
@@ -1027,7 +1078,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/nv200/547544666.html",
    "img": "img/547544666.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "514458116",
@@ -1046,7 +1098,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/514458116.html",
    "img": "img/514458116.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "481585079",
@@ -1065,7 +1118,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/corolla/481585079.html",
    "img": "img/481585079.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "501266642",
@@ -1084,7 +1138,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/mercedes-benz/a-class/501266642.html",
    "img": "img/501266642.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "478175003",
@@ -1103,7 +1158,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/q3/478175003.html",
    "img": "img/478175003.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "465772914",
@@ -1122,7 +1178,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/corolla/465772914.html",
    "img": "img/465772914.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "470842403",
@@ -1141,7 +1198,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/levin/470842403.html",
    "img": "img/470842403.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "461398152",
@@ -1160,7 +1218,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/a3/461398152.html",
    "img": "img/461398152.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "456727064",
@@ -1179,7 +1238,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/corolla/456727064.html",
    "img": "img/456727064.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "460970641",
@@ -1198,7 +1258,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/mazda/cx-5/460970641.html",
    "img": "img/460970641.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "445125448",
@@ -1217,7 +1278,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/vezel/445125448.html",
    "img": "img/445125448.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "420942525",
@@ -1236,7 +1298,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/mitsubishi/eclipse_cross/420942525.html",
    "img": "img/420942525.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "439194012",
@@ -1255,7 +1318,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/tayron/439194012.html",
    "img": "img/439194012.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "381456291",
@@ -1274,7 +1338,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/ix25/381456291.html",
    "img": "img/381456291.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "373857981",
@@ -1293,7 +1358,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/bmw/x1/373857981.html",
    "img": "img/373857981.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "374768584",
@@ -1312,7 +1378,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/seltos/374768584.html",
    "img": "img/374768584.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "339748025",
@@ -1331,7 +1398,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/vezel/339748025.html",
    "img": "img/339748025.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "368176875",
@@ -1350,7 +1418,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/corolla/368176875.html",
    "img": "img/368176875.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "337693380",
@@ -1369,7 +1438,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/gac/trumpchi_m6_pro/337693380.html",
    "img": "img/337693380.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "313941183",
@@ -1388,7 +1458,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/haval/m6_plus/313941183.html",
    "img": "img/313941183.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "317465864",
@@ -1407,7 +1478,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/a3/317465864.html",
    "img": "img/317465864.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "306995118",
@@ -1426,7 +1498,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/haval/h6/306995118.html",
    "img": "img/306995118.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   },
   {
    "id": "298076594",
@@ -1445,7 +1518,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/qashqai/298076594.html",
    "img": "img/298076594.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "303161782",
@@ -1464,7 +1538,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/audi/a3/303161782.html",
    "img": "img/303161782.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "286505880",
@@ -1483,7 +1558,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/pegas/286505880.html",
    "img": "img/286505880.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "297031646",
@@ -1502,7 +1578,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/297031646.html",
    "img": "img/297031646.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "273019800",
@@ -1521,7 +1598,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/273019800.html",
    "img": "img/273019800.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "265456268",
