@@ -1,5 +1,5 @@
 {
- "updated": "07.11.2026 23:23",
+ "updated": "08.11.2026 00:56",
  "cars": [
   {
    "id": "359745849",
@@ -3997,8 +3997,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/729440267.html",
    "img": "img/729440267.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "693208687",
@@ -4017,8 +4017,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/693208687.html",
    "img": "img/693208687.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "714792840",
@@ -4037,8 +4037,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/714792840.html",
    "img": "img/714792840.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "692335781",
@@ -4057,8 +4057,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/land_cruiser/692335781.html",
    "img": "img/692335781.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "674830674",
@@ -4077,8 +4077,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/kicks/674830674.html",
    "img": "img/674830674.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "644800933",
@@ -4097,8 +4097,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/644800933.html",
    "img": "img/644800933.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "654130104",
@@ -4117,8 +4117,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/654130104.html",
    "img": "img/654130104.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "611373938",
@@ -4137,8 +4137,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/voxy/611373938.html",
    "img": "img/611373938.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "591489729",
@@ -4157,8 +4157,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/kicks/591489729.html",
    "img": "img/591489729.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "601317156",
@@ -4177,8 +4177,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/kicks/601317156.html",
    "img": "img/601317156.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "582372235",
@@ -4197,8 +4197,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/daihatsu/rocky/582372235.html",
    "img": "img/582372235.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "465758386",
@@ -4217,8 +4217,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/id3/465758386.html",
    "img": "img/465758386.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "479915850",
@@ -4237,8 +4237,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/kicks/479915850.html",
    "img": "img/479915850.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "455045643",
@@ -4257,8 +4257,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/455045643.html",
    "img": "img/455045643.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "456062472",
@@ -4277,8 +4277,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/456062472.html",
    "img": "img/456062472.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "454481055",
@@ -4297,8 +4297,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/454481055.html",
    "img": "img/454481055.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "404902467",
@@ -4317,8 +4317,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/404902467.html",
    "img": "img/404902467.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "427565726",
@@ -4337,8 +4337,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/tank/427565726.html",
    "img": "img/427565726.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "391534495",
@@ -4357,8 +4357,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/391534495.html",
    "img": "img/391534495.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "402406778",
@@ -4377,8 +4377,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/kicks/402406778.html",
    "img": "img/402406778.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "388747222",
@@ -4397,8 +4397,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/raize/388747222.html",
    "img": "img/388747222.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "375498864",
@@ -4417,8 +4417,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/375498864.html",
    "img": "img/375498864.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "382535390",
@@ -4437,8 +4437,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/kicks/382535390.html",
    "img": "img/382535390.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "356705227",
@@ -4457,8 +4457,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/356705227.html",
    "img": "img/356705227.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "305966546",
@@ -4477,8 +4477,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/305966546.html",
    "img": "img/305966546.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "341769231",
@@ -4497,8 +4497,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/341769231.html",
    "img": "img/341769231.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "297838430",
@@ -4517,8 +4517,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/297838430.html",
    "img": "img/297838430.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "294363867",
@@ -4537,8 +4537,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/chevrolet/onix/294363867.html",
    "img": "img/294363867.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "288407373",
@@ -4557,8 +4557,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/288407373.html",
    "img": "img/288407373.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "291679537",
@@ -4577,8 +4577,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/291679537.html",
    "img": "img/291679537.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "225899283",
@@ -4597,8 +4597,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/noah/225899283.html",
    "img": "img/225899283.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "276413835",
@@ -4617,8 +4617,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/freed_plus/276413835.html",
    "img": "img/276413835.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "225143309",
@@ -4637,8 +4637,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/mazda/axela/225143309.html",
    "img": "img/225143309.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "206462748",
@@ -4657,8 +4657,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/206462748.html",
    "img": "img/206462748.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "215520652",
@@ -4677,8 +4677,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/215520652.html",
    "img": "img/215520652.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "199765675",
@@ -4697,8 +4697,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/199765675.html",
    "img": "img/199765675.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "182346731",
@@ -4717,8 +4717,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/182346731.html",
    "img": "img/182346731.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "185847101",
@@ -4737,8 +4737,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/185847101.html",
    "img": "img/185847101.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "175831968",
@@ -4757,8 +4757,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/175831968.html",
    "img": "img/175831968.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "128612189",
@@ -4777,7 +4777,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/128612189.html",
    "img": "img/128612189.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "139490882",
@@ -4796,7 +4797,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/daihatsu/rocky/139490882.html",
    "img": "img/139490882.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "120773820",
@@ -4815,7 +4817,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/120773820.html",
    "img": "img/120773820.jpg",
-   "cls": 1
+   "cls": 1,
+   "photos": 12
   },
   {
    "id": "102167052",
@@ -4834,7 +4837,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/102167052.html",
    "img": "img/102167052.jpg",
-   "cls": 0
+   "cls": 0,
+   "photos": 12
   },
   {
    "id": "53423988",
@@ -4853,7 +4857,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/geely/atlas/53423988.html",
    "img": "img/53423988.jpg",
-   "cls": 2
+   "cls": 2,
+   "photos": 12
   }
  ]
 }
