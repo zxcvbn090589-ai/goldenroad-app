@@ -1,5 +1,5 @@
 {
- "updated": "08.11.2026 00:56",
+ "updated": "11.11.2026 15:15",
  "cars": [
   {
    "id": "359745849",
@@ -2012,7 +2012,7 @@
    "box": "вариатор",
    "drive": "передний",
    "km": "21 000 км",
-   "price": 1480000,
+   "price": 1580000,
    "abroad": true,
    "noMileageRu": true,
    "location": "Китай → Владивосток",
@@ -4777,8 +4777,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/128612189.html",
    "img": "img/128612189.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "139490882",
@@ -4797,8 +4797,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/daihatsu/rocky/139490882.html",
    "img": "img/139490882.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "120773820",
@@ -4817,8 +4817,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/serena/120773820.html",
    "img": "img/120773820.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "102167052",
@@ -4837,8 +4837,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/note/102167052.html",
    "img": "img/102167052.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "53423988",
@@ -4857,8 +4857,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/geely/atlas/53423988.html",
    "img": "img/53423988.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   }
  ]
 }
