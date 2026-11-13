@@ -1,6 +1,26 @@
 {
- "updated": "13.11.2026 13:01",
+ "updated": "13.11.2026 15:15",
  "cars": [
+  {
+   "id": "245961199",
+   "make": "Honda",
+   "model": "XR-V",
+   "year": 2023,
+   "trim": "1.5 CVT Popular",
+   "engine": "1.5 л (124 л.с.)",
+   "fuel": "бензин",
+   "box": "вариатор",
+   "drive": "передний",
+   "km": "35 000 км",
+   "price": 1850000,
+   "abroad": true,
+   "noMileageRu": true,
+   "location": "Китай → Владивосток",
+   "url": "https://auto.drom.ru/vladivostok/honda/xr-v/245961199.html",
+   "img": "img/245961199.jpg",
+   "cls": 1,
+   "photos": 12
+  },
   {
    "id": "330474701",
    "make": "Volkswagen",
@@ -18,8 +38,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/lavida/330474701.html",
    "img": "img/330474701.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "195529576",
@@ -38,8 +58,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/mitsubishi/eclipse_cross/195529576.html",
    "img": "img/195529576.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "909956601",
