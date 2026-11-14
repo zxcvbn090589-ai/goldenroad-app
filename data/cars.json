@@ -1,5 +1,5 @@
 {
- "updated": "13.11.2026 15:15",
+ "updated": "14.11.2026 15:06",
  "cars": [
   {
    "id": "245961199",
@@ -18,8 +18,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/245961199.html",
    "img": "img/245961199.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "330474701",
@@ -1012,7 +1012,7 @@
    "box": "робот",
    "drive": "передний",
    "km": "42 000 км",
-   "price": 1760000,
+   "price": 1700000,
    "abroad": true,
    "noMileageRu": true,
    "location": "Китай → Владивосток",
@@ -1352,7 +1352,7 @@
    "box": "робот",
    "drive": "передний",
    "km": "50 000 км",
-   "price": 1150000,
+   "price": 1100000,
    "abroad": true,
    "noMileageRu": true,
    "location": "Китай → Владивосток",
@@ -1552,7 +1552,7 @@
    "box": "робот",
    "drive": "передний",
    "km": "42 000 км",
-   "price": 2150000,
+   "price": 2090000,
    "abroad": true,
    "noMileageRu": false,
    "location": "Китай → Владивосток",
