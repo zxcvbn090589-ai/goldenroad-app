@@ -1,5 +1,5 @@
 {
- "updated": "16.11.2026 13:14",
+ "updated": "17.11.2026 09:00",
  "cars": [
   {
    "id": "245961199",
@@ -4699,26 +4699,6 @@
    "img": "img/271476549.jpg",
    "photos": 12,
    "cls": 2
-  },
-  {
-   "id": "239796273",
-   "make": "Hyundai",
-   "model": "Elantra",
-   "year": 2022,
-   "trim": "1.5 CVT 2WD 20th Anniversary Commemorative Model",
-   "engine": "1.5 л (115 л.с.)",
-   "fuel": "бензин",
-   "box": "вариатор",
-   "drive": "передний",
-   "km": "41 000 км",
-   "price": 1380000,
-   "abroad": true,
-   "noMileageRu": true,
-   "location": "Китай → Владивосток",
-   "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/239796273.html",
-   "img": "img/239796273.jpg",
-   "photos": 12,
-   "cls": 1
   }
  ]
 }
