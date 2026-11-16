@@ -1,5 +1,5 @@
 {
- "updated": "15.11.2026 08:52",
+ "updated": "16.11.2026 13:14",
  "cars": [
   {
    "id": "245961199",
@@ -1892,7 +1892,7 @@
    "box": "робот",
    "drive": "передний",
    "km": "25 000 км",
-   "price": 1390000,
+   "price": 1310000,
    "abroad": true,
    "noMileageRu": true,
    "location": "Китай → Владивосток",
@@ -1952,7 +1952,7 @@
    "box": "вариатор",
    "drive": "передний",
    "km": "55 000 км",
-   "price": 1420000,
+   "price": 1380000,
    "abroad": true,
    "noMileageRu": true,
    "location": "Китай → Владивосток",
@@ -2032,7 +2032,7 @@
    "box": "робот",
    "drive": "передний",
    "km": "32 000 км",
-   "price": 1220000,
+   "price": 1150000,
    "abroad": true,
    "noMileageRu": true,
    "location": "Китай → Владивосток",
@@ -2072,7 +2072,7 @@
    "box": "вариатор",
    "drive": "передний",
    "km": "52 000 км",
-   "price": 1420000,
+   "price": 1380000,
    "abroad": true,
    "noMileageRu": true,
    "location": "Китай → Владивосток",
