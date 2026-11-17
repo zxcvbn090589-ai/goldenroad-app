@@ -1,6 +1,26 @@
 {
- "updated": "17.11.2026 09:00",
+ "updated": "17.11.2026 21:15",
  "cars": [
+  {
+   "id": "566650933",
+   "make": "Volkswagen",
+   "model": "Tiguan L",
+   "year": 2023,
+   "trim": "2.0 380 TSI DSG R-Line",
+   "engine": "2.0 л (220 л.с.)",
+   "fuel": "бензин",
+   "box": "робот",
+   "drive": "4WD",
+   "km": "33 000 км",
+   "price": 3500000,
+   "abroad": false,
+   "noMileageRu": false,
+   "location": "Владивосток",
+   "url": "https://auto.drom.ru/vladivostok/volkswagen/tiguan_l/566650933.html",
+   "img": "img/566650933.jpg",
+   "photos": 12,
+   "cls": 2
+  },
   {
    "id": "245961199",
    "make": "Honda",
@@ -1792,7 +1812,7 @@
    "box": "робот",
    "drive": "передний",
    "km": "37 000 км",
-   "price": 1850000,
+   "price": 1810000,
    "abroad": true,
    "noMileageRu": true,
    "location": "Китай → Владивосток",
@@ -4659,26 +4679,6 @@
    "img": "img/780326326.jpg",
    "photos": 12,
    "cls": 1
-  },
-  {
-   "id": "566650933",
-   "make": "Volkswagen",
-   "model": "Tiguan L",
-   "year": 2023,
-   "trim": "2.0 380 TSI DSG R-Line",
-   "engine": "2.0 л (220 л.с.)",
-   "fuel": "бензин",
-   "box": "робот",
-   "drive": "4WD",
-   "km": "33 000 км",
-   "price": 3500000,
-   "abroad": false,
-   "noMileageRu": false,
-   "location": "Владивосток",
-   "url": "https://auto.drom.ru/vladivostok/volkswagen/tiguan_l/566650933.html",
-   "img": "img/566650933.jpg",
-   "photos": 12,
-   "cls": 2
   },
   {
    "id": "271476549",
