@@ -1,5 +1,5 @@
 {
- "updated": "18.11.2026 17:34",
+ "updated": "18.11.2026 19:19",
  "cars": [
   {
    "id": "106571984",
@@ -578,26 +578,6 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/hyundai/elantra/724270475.html",
    "img": "img/724270475.jpg",
-   "photos": 12,
-   "cls": 1
-  },
-  {
-   "id": "689344215",
-   "make": "Volkswagen",
-   "model": "Tharu",
-   "year": 2022,
-   "trim": "1.4 280 TSI DSG Luxury",
-   "engine": "1.4 л (150 л.с.)",
-   "fuel": "бензин",
-   "box": "робот",
-   "drive": "передний",
-   "km": "42 000 км",
-   "price": 1850000,
-   "abroad": true,
-   "noMileageRu": true,
-   "location": "Китай → Владивосток",
-   "url": "https://auto.drom.ru/vladivostok/volkswagen/tharu/689344215.html",
-   "img": "img/689344215.jpg",
    "photos": 12,
    "cls": 1
   },
