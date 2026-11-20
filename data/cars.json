@@ -1,5 +1,5 @@
 {
- "updated": "20.11.2026 17:36",
+ "updated": "20.11.2026 23:30",
  "cars": [
   {
    "id": "694911174",
@@ -18,8 +18,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/toyota/levin/694911174.html",
    "img": "img/694911174.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "821144347",
@@ -38,8 +38,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/k3/821144347.html",
    "img": "img/821144347.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "108747828",
@@ -58,8 +58,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/kia/kx1/108747828.html",
    "img": "img/108747828.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "323704021",
@@ -78,8 +78,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/gac/trumpchi_m6_pro/323704021.html",
    "img": "img/323704021.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "106571984",
@@ -2172,7 +2172,7 @@
    "box": "робот",
    "drive": "передний",
    "km": "58 000 км",
-   "price": 2290000,
+   "price": 2490000,
    "abroad": true,
    "noMileageRu": true,
    "location": "Китай → Владивосток",
