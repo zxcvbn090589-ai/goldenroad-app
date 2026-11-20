@@ -1,5 +1,5 @@
 {
- "updated": "20.11.2026 23:30",
+ "updated": "21.11.2026 09:00",
  "cars": [
   {
    "id": "694911174",
@@ -4759,26 +4759,6 @@
    "img": "img/780326326.jpg",
    "photos": 12,
    "cls": 1
-  },
-  {
-   "id": "271476549",
-   "make": "Mercedes-Benz",
-   "model": "G-Class",
-   "year": 2020,
-   "trim": "G 63 AMG",
-   "engine": "4.0 л (585 л.с.)",
-   "fuel": "бензин",
-   "box": "АКПП",
-   "drive": "4WD",
-   "km": "50 000 км",
-   "price": 17500000,
-   "abroad": false,
-   "noMileageRu": false,
-   "location": "Владивосток",
-   "url": "https://auto.drom.ru/vladivostok/mercedes-benz/g-class/271476549.html",
-   "img": "img/271476549.jpg",
-   "photos": 12,
-   "cls": 2
   }
  ]
 }
