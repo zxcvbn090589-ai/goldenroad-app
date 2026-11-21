@@ -1,6 +1,26 @@
 {
- "updated": "21.11.2026 11:30",
+ "updated": "21.11.2026 13:01",
  "cars": [
+  {
+   "id": "336715823",
+   "make": "Toyota",
+   "model": "Corolla",
+   "year": 2022,
+   "trim": "1.2 CVT 185T Elite PLUS",
+   "engine": "1.2 л (116 л.с.)",
+   "fuel": "бензин",
+   "box": "вариатор",
+   "drive": "передний",
+   "km": "35 000 км",
+   "price": 1290000,
+   "abroad": true,
+   "noMileageRu": true,
+   "location": "Китай → Владивосток",
+   "url": "https://auto.drom.ru/vladivostok/toyota/corolla/336715823.html",
+   "img": "img/336715823.jpg",
+   "cls": 1,
+   "photos": 12
+  },
   {
    "id": "177097708",
    "make": "Nissan",
@@ -18,8 +38,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/nissan/kicks/177097708.html",
    "img": "img/177097708.jpg",
-   "cls": 0,
-   "photos": 12
+   "photos": 12,
+   "cls": 0
   },
   {
    "id": "179007410",
@@ -38,8 +58,8 @@
    "location": "Китай → Владивосток",
    "url": "https://auto.drom.ru/vladivostok/honda/xr-v/179007410.html",
    "img": "img/179007410.jpg",
-   "cls": 1,
-   "photos": 12
+   "photos": 12,
+   "cls": 1
   },
   {
    "id": "694911174",
