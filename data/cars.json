@@ -1,5 +1,5 @@
 {
- "updated": "24.11.2026 17:39",
+ "updated": "24.11.2026 23:34",
  "cars": [
   {
    "id": "853604276",
@@ -87,10 +87,10 @@
    "model": "Tiguan L",
    "year": 2024,
    "trim": "",
-   "engine": "",
+   "engine": "2.0 л (220 л.с.)",
    "fuel": "бензин",
-   "box": "",
-   "drive": "",
+   "box": "автомат",
+   "drive": "4WD",
    "km": "26 000 км",
    "price": 4430000,
    "abroad": false,
@@ -98,8 +98,8 @@
    "location": "Владивосток",
    "url": "https://auto.drom.ru/vladivostok/volkswagen/tiguan_l/355797424.html",
    "img": "img/355797424.jpg",
-   "cls": 2,
-   "photos": 12
+   "photos": 12,
+   "cls": 2
   },
   {
    "id": "925662204",
